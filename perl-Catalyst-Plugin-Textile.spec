@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Textile for Catalyst
 License:    GPL+ or Artistic
@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{up
 
 BuildRequires: perl(Catalyst)
 BuildRequires: perl(Text::Textile)
+BuildRequires: perl(Class::Data::Inheritable)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
